@@ -54,7 +54,17 @@ class PizzaDeliveryUnitTests: XCTestCase {
     }
 
     func testPerformanceExample() {
-        self.measure { }
+        // This is a performance app request test case.
+        self.measure {
+            let exp = expectation(description: "server fetch")
+            let appRequest = AppRequest()
+            appRequest.getPizza({ (pizza, error) in
+                exp.fulfill()
+            })
+            waitForExpectations(timeout: 10.0, handler: { (error) in
+                xprint (error?.localizedDescription as Any)
+            })
+        }
     }
 
 }
