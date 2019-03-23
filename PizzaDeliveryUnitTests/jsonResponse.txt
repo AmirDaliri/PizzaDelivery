@@ -1,0 +1,15 @@
+[
+{
+"name": "Mozzarella",
+"price": 10
+}, {
+"name": "Pepperoni",
+"price": 12
+}, {
+"name": "Vegetarian",
+"price": 9.5
+}, {
+"name": "Super cheese",
+"price": 11
+}
+]

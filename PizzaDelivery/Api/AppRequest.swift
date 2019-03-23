@@ -35,18 +35,10 @@ class AppRequest {
     }
 }
 
-//        if let path = Bundle.main.path(forResource: "piiza", ofType: "json") {
-//            do {
-//                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-////                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-//                let decoder = JSONDecoder()
-//                let jsonData = try decoder.decode(Pizza.self, from: data)
-//                print(jsonData.count)
-//                for piz in jsonData {
-//                    xprint(piz.name,piz.price)
-//                }
-//            } catch {
-//                // handle error
-//                xprint(error)
-//            }
-//        }
+class TipCalc {
+    var defPerc = 75.0
+    
+    func calcTip(amount : Double, tipPerc : Double) -> Double {
+        return amount * tipPerc/100.0
+    }
+}
