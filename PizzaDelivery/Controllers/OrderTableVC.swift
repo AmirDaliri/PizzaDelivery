@@ -36,8 +36,8 @@ class OrderTableVC: UITableViewController {
     var fullPrice: String?
     var halfPrice: String?
     var isFullSelected = true
-    
-    var dic: [(pizza: String, price: String)] = []
+    var reloadBasket = false
+
     // MARK: - Lifecycle Methods
     
     override func viewDidLoad() {
@@ -55,12 +55,13 @@ class OrderTableVC: UITableViewController {
             if isFullSelected {
                 vc.price = self.fullPrice
                 vc.isFullSelected = true
-            } else {
+            } else if !isFullSelected {
                 vc.price = self.halfPrice
                 vc.isFullSelected = false
             }
             vc.pizzaImage = self.pizzaImageView.image
             vc.pizzaName = self.pizzaName
+            vc.reloadBasket = self.reloadBasket
         }
     }
 
@@ -100,10 +101,11 @@ class OrderTableVC: UITableViewController {
         case 0:
             if !self.isFullSelected {
                 Helpers.showAlertWithAction(vc: self, Strings.halfOrderTitle, Strings.halfOrderMessage, rightBttnTitle: "continue", rightAction: { (rightAction) in
-                    OperationQueue.main.addOperation ({
-                        self.saveOrder(name: self.pizzaName!, price: self.fullPrice!, size: "Full")
-                        self.performSegue(withIdentifier: self.showCheckOutVCIdentifire, sender: self)
-                    })
+                    self.performSegue(withIdentifier: self.showCheckOutVCIdentifire, sender: self)
+//                    OperationQueue.main.addOperation ({
+//                        self.saveOrder(name: self.pizzaName!, price: self.fullPrice!, size: "Full")
+//                        self.performSegue(withIdentifier: self.showCheckOutVCIdentifire, sender: self)
+//                    })
                 }, leftBttnTitle: "new order") { (leftAction) in
                     OperationQueue.main.addOperation ({
                         self.saveOrder(name: self.pizzaName!, price: self.halfPrice!, size: "Half")
@@ -115,7 +117,8 @@ class OrderTableVC: UITableViewController {
             }
         case 1:
             if !self.isFullSelected {
-                self.saveOrder(name: self.pizzaName!, price: self.fullPrice!, size: "Full")
+                self.reloadBasket = true
+                self.saveOrder(name: self.pizzaName!, price: self.halfPrice!, size: "Half")
             } else {
                 Helpers.removePizza()
             }

@@ -44,6 +44,7 @@ class PizzaListVC: UIViewController {
     
     func setupView() {
         self.navigationController?.navigationBar.transparentNavigationBar()
+        self.navigationController?.navigationBar.tintColor = UIColor.mainRed
         self.menuBarBttn.image = #imageLiteral(resourceName: "ic-menu").withRenderingMode(.alwaysOriginal)
         self.basketBarBttn.image = #imageLiteral(resourceName: "ic-bascket").withRenderingMode(.alwaysOriginal)
         self.collectionView.alwaysBounceVertical = true
@@ -73,13 +74,14 @@ class PizzaListVC: UIViewController {
                 let halfPrice = singlePizza.price / 2
                 vc.pizzaName = singlePizza.name
                 vc.fullPrice = String(singlePizza.price)
-                vc.halfPrice = String(halfPrice) 
+                vc.halfPrice = String(halfPrice)
             }
             
         } else if segue.identifier == showCheckOutVCIdentifire {
             
             guard let pizza = Helpers.getPizza() else { return }
             let vc: CheckOutTableVC = segue.destination as! CheckOutTableVC
+            vc.reloadBasket = true
             vc.pizza = pizza
             
         } else {

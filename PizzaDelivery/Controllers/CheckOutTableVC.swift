@@ -44,6 +44,7 @@ class CheckOutTableVC: UITableViewController {
     var pizzaName: String?
     var pizzaImage: UIImage?
     var isFullSelected: Bool?
+    var reloadBasket = false
 
     var pizza: Pizza?
     var finallPrice: String?
@@ -78,9 +79,7 @@ class CheckOutTableVC: UITableViewController {
         self.orderBttn.applyCornerBttn()
         self.fullPizzaView.applyCardStyle()
         
-        if let pizza = Helpers.getPizza() {
-            self.loadBasket(pizza: pizza)
-        } else {
+        if !self.reloadBasket {
             self.fullPizzaPriceLabel.text = "$" + (self.price ?? "-")
             self.pizzaNameLabel.text = self.pizzaName
             self.pizzaPriceLabel.text = "$" + (self.price ?? "-")
@@ -90,7 +89,13 @@ class CheckOutTableVC: UITableViewController {
             guard let isFullSelected = self.isFullSelected, !isFullSelected else { return  }
             self.fullPizzaSlicceLabel.text = "(4 Slices)"
             self.sizeLabel.text = "Half"
+            self.fullPizzaLabel.text = "Half"
+            
+        } else {
+            guard let pizza = Helpers.getPizza() else {return}
+            self.loadBasket(pizza: pizza)
         }
+
         
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
@@ -125,7 +130,11 @@ class CheckOutTableVC: UITableViewController {
                 self.price = String(firstPizza.price)
                 self.totalPriceLabel.text = "$" + String(self.calucateTotalPrice())
                 self.finallPrice = "$" + String(self.calucateTotalPrice())
-                
+                if firstPizza.size == "Half" {
+                    self.fullPizzaSlicceLabel.text = "(4 Slices)"
+                    self.fullPizzaLabel.text = firstPizza.size
+                }
+
             case 2:
                 animatePizzaImage()
                 
@@ -136,6 +145,10 @@ class CheckOutTableVC: UITableViewController {
                 self.pizzaPriceLabel.text = "$" + String(firstPizza.price)
                 self.pizzaLabel.text = firstPizza.name
                 self.price = String(firstPizza.price)
+                if firstPizza.size == "Half" {
+                    self.fullPizzaSlicceLabel.text = "(4 Slices)"
+                    self.fullPizzaLabel.text = firstPizza.size
+                }
                 
                 let secondOrder = pizza[1]
                 self.halfPizzaView.applyCardStyle()
@@ -147,6 +160,10 @@ class CheckOutTableVC: UITableViewController {
                 self.halfPizzaPriceLabel.text = "$" + String(secondOrder.price)
                 self.secondOrderPizzaName.text = secondOrder.name
                 self.secondOrderPriceName.text = "$" + String(secondOrder.price)
+                if secondOrder.size == "Half" {
+                    self.halfPizzaSlicceLabel.text = "(4 Slices)"
+                    self.halfPizzaLabel.text = firstPizza.size
+                }
                 
                 self.pizzaNameLabel.text = firstPizza.name + " & " + secondOrder.name
                 self.totalPriceLabel.text = "$" + String(self.calucateTotalPrice() + secondOrder.price)

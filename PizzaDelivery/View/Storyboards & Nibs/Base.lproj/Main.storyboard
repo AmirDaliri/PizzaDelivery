@@ -1211,7 +1211,7 @@
                     <connections>
                         <outlet property="fullPizzaIcon" destination="bMu-dJ-ysv" id="73g-0t-bnG"/>
                         <outlet property="fullPizzaLabel" destination="Suy-xZ-qpV" id="7gH-Wq-O0q"/>
-                        <outlet property="fullPizzaPriceLabel" destination="uoB-Hl-0J4" id="JVe-2n-5TR"/>
+                        <outlet property="fullPizzaPriceLabel" destination="uoB-Hl-0J4" id="GsF-zY-LDw"/>
                         <outlet property="fullPizzaSlicceLabel" destination="Z0c-cL-fjH" id="aoY-qK-LiB"/>
                         <outlet property="fullPizzaView" destination="FmQ-QE-yxg" id="yZ1-mD-vyX"/>
                         <outlet property="halfPizzaIcon" destination="rZh-4i-RQE" id="fsk-PT-oi8"/>
