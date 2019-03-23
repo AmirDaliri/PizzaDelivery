@@ -13,9 +13,12 @@ Pizza Delivery is an open source sample app with robust and professional feature
 
 ## Features
 
+- Sweet Animation.
+- Unit Test
+- UI Test
+- Performance Test
 - Ability to update Pizza list from server or locally. 
 - Ability to pizza object and set in order basket with NSUserDefaults. 
-- Sweet Animation.
 - Custom views optimized for 5, 6 and 6+ for backwards compatibility
 - Compiles with Xcode 10 & Swift 4.2
 - Parses JSON using Swift 4.2 Codable protocol
