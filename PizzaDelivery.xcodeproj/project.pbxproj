@@ -61,9 +61,9 @@
 
 /* Begin PBXFileReference section */
 		290D48F02245040000EFFD16 /* OrderTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableVC.swift; sourceTree = "<group>"; };
-		290D48F422452E8400EFFD16 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		290D48F422452E8400EFFD16 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UITextView+Placeholder.h"; path = "PizzaDelivery/Resources/UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		290D48F522452EA200EFFD16 /* PizzaDelivery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PizzaDelivery-Bridging-Header.h"; sourceTree = "<group>"; };
-		290D48F622452EA300EFFD16 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		290D48F622452EA300EFFD16 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Placeholder.m"; path = "PizzaDelivery/Resources/UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		293C67D42245483800D120F6 /* CheckOutTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutTableVC.swift; sourceTree = "<group>"; };
 		293C67DA2245789900D120F6 /* BadgeBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBarButtonItem.swift; sourceTree = "<group>"; };
 		293C67DC2245B46F00D120F6 /* SuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
