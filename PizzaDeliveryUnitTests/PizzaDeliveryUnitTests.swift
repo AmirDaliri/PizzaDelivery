@@ -11,6 +11,9 @@ import XCTest
 
 class PizzaDeliveryUnitTests: XCTestCase {
 
+    let appRequest = AppRequest()
+    let pizza = PizzaElement(name: "pepperoni", price: 10.0, size: "Full")
+
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -42,7 +45,6 @@ class PizzaDeliveryUnitTests: XCTestCase {
     func testgetPizza() {
         let exp = expectation(description: "server fetch")
 
-        let appRequest = AppRequest()
         appRequest.getPizza { (pizza, error) in
             XCTAssertTrue(pizza!.count > 0, "items should not be empty")
             exp.fulfill()
@@ -52,18 +54,45 @@ class PizzaDeliveryUnitTests: XCTestCase {
             xprint(error?.localizedDescription as Any)
         }
     }
+    
+    func testSaveSingleOrder() {
+        Helpers.savePizza(pizza: self.pizza)
+        if let savedOrder = Helpers.getPizza() {
+            XCTAssertNotNil(savedOrder, "should not be nil")
+            XCTAssertGreaterThan(savedOrder.count, 0, "should have values")
+            Helpers.removePizza()
+        } else {
+            XCTFail()
+        }
+    }
+    
+    func testSaveTwoOrder() {
+        Helpers.savePizza(pizza: self.pizza)
+        let secondOrder = PizzaElement(name: "ccheese", price: 10.0, size: "Half")
+        Helpers.savePizza(pizza: secondOrder)
+        if let savedOrder = Helpers.getPizza() {
+            XCTAssertNotNil(savedOrder, "should not be nil")
+            XCTAssertGreaterThan(savedOrder.count, 1, "should more than one values")
+            Helpers.removePizza()
+        } else {
+            XCTFail()
+        }
+    }
 
     func testPerformanceExample() {
         // This is a performance app request test case.
         self.measure {
+            
             let exp = expectation(description: "server fetch")
-            let appRequest = AppRequest()
+
             appRequest.getPizza({ (pizza, error) in
                 exp.fulfill()
             })
+            
             waitForExpectations(timeout: 10.0, handler: { (error) in
                 xprint (error?.localizedDescription as Any)
             })
+            
         }
     }
 
