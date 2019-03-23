@@ -1,7 +1,6 @@
 # Pizza Delivery
 
 Pizza Delivery is an open source sample app with robust and professional features. This is a fully realized built entirely in Swift. 
-There are over 80 different apps accepted to the app store using this code!
 
 
 <p align="center">
