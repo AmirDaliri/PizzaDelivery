@@ -4,7 +4,7 @@ Pizza Delivery is an open source sample app with robust and professional feature
 
 
 <p align="center">
-    <img src="https://files.fm/thumb_show.php?i=8f3u73ra&view" width="300">
+    <img src="https://files.fm/thumb_show.php?i=8f3u73ra&view" width="280">
     <img src="https://files.fm/thumb_show.php?i=hjc4acft&view" width="300">
     <img src="https://files.fm/thumb_show.php?i=bkrhz7yx&view" width="300">
     <img src="https://files.fm/thumb_show.php?i=4rufwum3&view" width="300">
