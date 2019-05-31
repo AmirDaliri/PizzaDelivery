@@ -4,10 +4,10 @@ Pizza Delivery is an open source sample app with robust and professional feature
 
 
 <p align="center">
-    <img src="https://files.fm/thumb_show.php?i=8f3u73ra&view" width="280">
-    <img src="https://files.fm/thumb_show.php?i=hjc4acft&view" width="300">
-    <img src="https://files.fm/thumb_show.php?i=bkrhz7yx&view" width="300">
-    <img src="https://files.fm/thumb_show.php?i=4rufwum3&view" width="300">
+    <img src="https://raw.githubusercontent.com/AmirDaliri/PizzaDelivery/master/Img/thumb_show.php.jpeg" width="280">
+    <img src="https://raw.githubusercontent.com/AmirDaliri/PizzaDelivery/master/Img/thumb_show.php-2.jpeg" width="300">
+    <img src="https://raw.githubusercontent.com/AmirDaliri/PizzaDelivery/master/Img/thumb_show.php-3.jpeg" width="300">
+    <img src="https://raw.githubusercontent.com/AmirDaliri/PizzaDelivery/master/Img/thumb_show.php-4.jpeg" width="300">
 </p>
 
 
