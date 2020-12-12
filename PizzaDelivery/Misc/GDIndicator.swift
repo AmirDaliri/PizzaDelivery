@@ -522,7 +522,7 @@ class GDCircularDotsRotating: UIView{
         //Setting properties
         let circleStart: CGFloat = 0.0
         let circleEnd: CGFloat = CGFloat(Double.pi * 2)
-        let animTime = CACurrentMediaTime()
+        _ = CACurrentMediaTime()
         
         //Calculate possition for each circle in different directions
         let center = CGPoint(x: frame.width / 2, y: frame.height / 2)
