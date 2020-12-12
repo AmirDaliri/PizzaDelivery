@@ -42,7 +42,7 @@ public class LoadingView: UIView {
     }
 }
 
-public extension UIView {
+extension UIView {
 
     struct LoadingViewConstants {
         static let Tag = 1000

@@ -22,7 +22,7 @@
 
 import UIKit
 
-public extension String {
+extension String {
     public var length: Int { return self.count }
     
     public func toURL() -> NSURL? {
