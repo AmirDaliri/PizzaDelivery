@@ -60,6 +60,7 @@
 		298993F2224465CC004D6C70 /* BlurPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298993F1224465CC004D6C70 /* BlurPopup.swift */; };
 		298993F422446680004D6C70 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298993F322446680004D6C70 /* InfoVC.swift */; };
 		298993F622447098004D6C70 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298993F522447098004D6C70 /* Colors.swift */; };
+		C5EDF05C258657C9001660FF /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDF05B258657C9001660FF /* NavigationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		298993F1224465CC004D6C70 /* BlurPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurPopup.swift; sourceTree = "<group>"; };
 		298993F322446680004D6C70 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		298993F522447098004D6C70 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C5EDF05B258657C9001660FF /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 				298993AC224441F8004D6C70 /* Misc */,
 				2989939E2243FD5F004D6C70 /* Resources */,
 				2989939D2243FD56004D6C70 /* Supporting Files */,
+				C5EDF05B258657C9001660FF /* NavigationManager.swift */,
 			);
 			path = PizzaDelivery;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				298993D3224447C8004D6C70 /* ImageLoader.swift in Sources */,
 				290D48F12245040100EFFD16 /* OrderTableVC.swift in Sources */,
 				293C67D52245483800D120F6 /* CheckOutTableVC.swift in Sources */,
+				C5EDF05C258657C9001660FF /* NavigationManager.swift in Sources */,
 				298993AE224442B8004D6C70 /* Helpers.swift in Sources */,
 				298993D2224447C8004D6C70 /* TransitionZoom.swift in Sources */,
 				298993D4224447C8004D6C70 /* Spring.swift in Sources */,
