@@ -240,15 +240,10 @@
 				2989939A2243FD1F004D6C70 /* Controllers */,
 				298993F0224450C7004D6C70 /* Cell */,
 				2989939B2243FD2D004D6C70 /* View */,
+				C5F0616C2588100700807C6E /* Core */,
 				298993AC224441F8004D6C70 /* Misc */,
 				2989939E2243FD5F004D6C70 /* Resources */,
 				2989939D2243FD56004D6C70 /* Supporting Files */,
-				C5EDF05B258657C9001660FF /* NavigationManager.swift */,
-				C5F0613725880C0000807C6E /* ControllerKeys.swift */,
-				C5F0614525880D3300807C6E /* Coordinator.swift */,
-				C5F0614D25880DED00807C6E /* ControllerFactory.swift */,
-				C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */,
-				C5F0615725880E8400807C6E /* UIViewController+Extension.swift */,
 			);
 			path = PizzaDelivery;
 			sourceTree = "<group>";
@@ -320,7 +315,7 @@
 		298993AC224441F8004D6C70 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				298993AA224441F2004D6C70 /* Extensions.swift */,
+				C5F061702588101900807C6E /* Extensions */,
 				298993AD224442B8004D6C70 /* Helpers.swift */,
 				293C67DE2245C7EF00D120F6 /* Reachability.swift */,
 				293C67E02245C8DE00D120F6 /* GDIndicator.swift */,
@@ -374,6 +369,35 @@
 				298993EE224450C3004D6C70 /* PizzaListCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5F061682588100100807C6E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C5EDF05B258657C9001660FF /* NavigationManager.swift */,
+				C5F0613725880C0000807C6E /* ControllerKeys.swift */,
+				C5F0614525880D3300807C6E /* Coordinator.swift */,
+				C5F0614D25880DED00807C6E /* ControllerFactory.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C5F0616C2588100700807C6E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C5F061682588100100807C6E /* Navigation */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C5F061702588101900807C6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */,
+				C5F0615725880E8400807C6E /* UIViewController+Extension.swift */,
+				298993AA224441F2004D6C70 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
