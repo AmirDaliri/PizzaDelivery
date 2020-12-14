@@ -64,6 +64,7 @@
 		C5F0613825880C0000807C6E /* ControllerKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0613725880C0000807C6E /* ControllerKeys.swift */; };
 		C5F0614625880D3300807C6E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0614525880D3300807C6E /* Coordinator.swift */; };
 		C5F0614E25880DED00807C6E /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0614D25880DED00807C6E /* ControllerFactory.swift */; };
+		C5F0615325880E5200807C6E /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,7 @@
 		C5F0613725880C0000807C6E /* ControllerKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerKeys.swift; sourceTree = "<group>"; };
 		C5F0614525880D3300807C6E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C5F0614D25880DED00807C6E /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 				C5F0613725880C0000807C6E /* ControllerKeys.swift */,
 				C5F0614525880D3300807C6E /* Coordinator.swift */,
 				C5F0614D25880DED00807C6E /* ControllerFactory.swift */,
+				C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */,
 			);
 			path = PizzaDelivery;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				298993812243FB39004D6C70 /* AppDelegate.swift in Sources */,
 				298993E8224447C8004D6C70 /* SpringAnimation.swift in Sources */,
 				298993EF224450C3004D6C70 /* PizzaListCollectionViewCell.swift in Sources */,
+				C5F0615325880E5200807C6E /* UINavigationController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
