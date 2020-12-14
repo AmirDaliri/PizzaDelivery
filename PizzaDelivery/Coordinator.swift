@@ -59,6 +59,7 @@ class Coordinator {
     // MARK: - Starter App
     func initializeApp(isLogout: Bool = false, fetchContent: Bool = true) {
         if #available(iOS 13.0, *) {
+            /*
             guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                   let sceneDelegate = windowScene.delegate as? SceneDelegate
             else {
@@ -70,6 +71,7 @@ class Coordinator {
             window.rootViewController = navController
             sceneDelegate.window = window
             window.makeKeyAndVisible()
+            */
         } else {
             // Fallback on earlier versions
             if let appDelegate = UIApplication.shared.delegate as? AppDelegate {

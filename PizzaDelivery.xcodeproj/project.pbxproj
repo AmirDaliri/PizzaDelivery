@@ -65,6 +65,7 @@
 		C5F0614625880D3300807C6E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0614525880D3300807C6E /* Coordinator.swift */; };
 		C5F0614E25880DED00807C6E /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0614D25880DED00807C6E /* ControllerFactory.swift */; };
 		C5F0615325880E5200807C6E /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */; };
+		C5F0615825880E8400807C6E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0615725880E8400807C6E /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +153,7 @@
 		C5F0614525880D3300807C6E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C5F0614D25880DED00807C6E /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		C5F0615725880E8400807C6E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 				C5F0614525880D3300807C6E /* Coordinator.swift */,
 				C5F0614D25880DED00807C6E /* ControllerFactory.swift */,
 				C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */,
+				C5F0615725880E8400807C6E /* UIViewController+Extension.swift */,
 			);
 			path = PizzaDelivery;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				298993A9224411AD004D6C70 /* Strings.swift in Sources */,
 				298993E2224447C8004D6C70 /* DesignableTabBarController.swift in Sources */,
 				298993E7224447C8004D6C70 /* AutoTextView.swift in Sources */,
+				C5F0615825880E8400807C6E /* UIViewController+Extension.swift in Sources */,
 				298993E5224447C8004D6C70 /* SpringLabel.swift in Sources */,
 				298993E9224447C8004D6C70 /* UnwindSegue.swift in Sources */,
 				298993E3224447C8004D6C70 /* AsyncButton.swift in Sources */,
