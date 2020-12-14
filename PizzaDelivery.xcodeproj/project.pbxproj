@@ -62,6 +62,10 @@
 		298993F622447098004D6C70 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298993F522447098004D6C70 /* Colors.swift */; };
 		C5EDF05C258657C9001660FF /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDF05B258657C9001660FF /* NavigationManager.swift */; };
 		C5F0613825880C0000807C6E /* ControllerKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0613725880C0000807C6E /* ControllerKeys.swift */; };
+		C5F0614625880D3300807C6E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0614525880D3300807C6E /* Coordinator.swift */; };
+		C5F0614E25880DED00807C6E /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0614D25880DED00807C6E /* ControllerFactory.swift */; };
+		C5F0615325880E5200807C6E /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */; };
+		C5F0615825880E8400807C6E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0615725880E8400807C6E /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +150,10 @@
 		298993F522447098004D6C70 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C5EDF05B258657C9001660FF /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		C5F0613725880C0000807C6E /* ControllerKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerKeys.swift; sourceTree = "<group>"; };
+		C5F0614525880D3300807C6E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C5F0614D25880DED00807C6E /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		C5F0615725880E8400807C6E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +245,10 @@
 				2989939D2243FD56004D6C70 /* Supporting Files */,
 				C5EDF05B258657C9001660FF /* NavigationManager.swift */,
 				C5F0613725880C0000807C6E /* ControllerKeys.swift */,
+				C5F0614525880D3300807C6E /* Coordinator.swift */,
+				C5F0614D25880DED00807C6E /* ControllerFactory.swift */,
+				C5F0615225880E5200807C6E /* UINavigationController+Extension.swift */,
+				C5F0615725880E8400807C6E /* UIViewController+Extension.swift */,
 			);
 			path = PizzaDelivery;
 			sourceTree = "<group>";
@@ -548,12 +560,15 @@
 				298993D1224447C8004D6C70 /* TransitionManager.swift in Sources */,
 				293C67DD2245B46F00D120F6 /* SuccessVC.swift in Sources */,
 				C5F0613825880C0000807C6E /* ControllerKeys.swift in Sources */,
+				C5F0614E25880DED00807C6E /* ControllerFactory.swift in Sources */,
 				293C67E12245C8DE00D120F6 /* GDIndicator.swift in Sources */,
 				298993D8224447C8004D6C70 /* BlurView.swift in Sources */,
+				C5F0614625880D3300807C6E /* Coordinator.swift in Sources */,
 				298993DE224447C8004D6C70 /* SpringView.swift in Sources */,
 				298993A9224411AD004D6C70 /* Strings.swift in Sources */,
 				298993E2224447C8004D6C70 /* DesignableTabBarController.swift in Sources */,
 				298993E7224447C8004D6C70 /* AutoTextView.swift in Sources */,
+				C5F0615825880E8400807C6E /* UIViewController+Extension.swift in Sources */,
 				298993E5224447C8004D6C70 /* SpringLabel.swift in Sources */,
 				298993E9224447C8004D6C70 /* UnwindSegue.swift in Sources */,
 				298993E3224447C8004D6C70 /* AsyncButton.swift in Sources */,
@@ -564,6 +579,7 @@
 				298993812243FB39004D6C70 /* AppDelegate.swift in Sources */,
 				298993E8224447C8004D6C70 /* SpringAnimation.swift in Sources */,
 				298993EF224450C3004D6C70 /* PizzaListCollectionViewCell.swift in Sources */,
+				C5F0615325880E5200807C6E /* UINavigationController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
